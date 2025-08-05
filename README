@@ -1,1 +1,22 @@
 ## AI AGENT IN LANGGRAPH
+
+What is an 'AI conversation' and what does an 'AI Agent conversation' look like (Reality vs Hype)
+
+A demo showing an AI agent i have created for planning my travel around my meeting calendar. (watch at 1.25 x speed on youtube)
+
+1. A LangGraph AI agent (text based conversation) which can plan a travel/dining out schedule based on my meeting calendar (google calendar)
+	- TOOL CALLING
+		- calling google calendar (through an MCP server) to get my meeting information for next week
+		- calling google maps to calculate distance and travel times
+		- using a web search tool to get phone numbers of places
+	- HUMAN IN THE LOOP
+		- take a manual input and improve results of the AI
+	- PERSISTENT MEMORY 
+		- A DATABASE to permanently store user preferences (PostgreSQL DB used)
+	- calling an MCP SERVER that can authorize with google calendar and get my meeting details  
+
+2. What an AI conversation looks like 'IN CODE' in the backend in LangGraph
+
+3. How different AI models give different results (anthropic claude vs openai claude-3-5-haiku)
+
+4. The cost of the conversation.
